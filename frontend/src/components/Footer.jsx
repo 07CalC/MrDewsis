@@ -74,7 +74,7 @@ export const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#/contact"
                 className="block py-2 px-1 text-xl text-white font-bold hover:text-[#6ecc9f]"
               >
                 Contact Us

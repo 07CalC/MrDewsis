@@ -1,8 +1,10 @@
 import { TiThMenu } from "react-icons/ti";
 import { FaSearch } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useResolvedPath } from "react-router-dom";
+import { useState } from "react";
 
 export const Navbar = () => {
+  const [showNav, setShowNav] = useState(true)
   return (
     <>
     {/* <div className="flex bg-slate-300 bg-opacity-40 justify-center items-center"> */}
@@ -11,7 +13,7 @@ export const Navbar = () => {
           
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqS71-yY0eGFtOG-SEyPfsuODJHNN4sEl1y7-f_gowAm1S_YWMkXlPdLR2pmnkugDxx-w&usqp=CAU"
-              className="h-20 w-20"
+              className="h-20 w-20 rounded-full"
               alt="LOGO"
             />
             
@@ -71,8 +73,18 @@ export const Navbar = () => {
           </div>
           <div className="md:hidden flex items-center mr-4 self-center">
             <FaSearch className="text-3xl mx-2"/>
-            <TiThMenu className="text-3xl"/>
+            <TiThMenu className="text-3xl" onClick={()=>setShowNav(!showNav)}/>
           </div>
+          <div className={`${showNav ? "" : "hidden"} w-svw h-full  cursor-pointer bg-white bg-opacity-60 justify-end items-end lg:hidden`}>
+          <div className="flex flex-col p-5 justify-center items-center">
+          <p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#" className="mx-5 ">Home</a></p>
+            <p  className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#" className="mx-5">Menu</a></p>
+            <p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/about" className="mx-5">About Us</a></p>
+            <p className="font-bold text-2xl border-b border-[#208856] text-center text-black"><a onClick={()=>setShowNav(!showNav)} href="#/contact" className="mx-5">Contact Us</a></p>
+            <p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/login" className="mx-5">Login</a></p>
+            <p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/adminlogin" className="mx-5">Admin Login</a></p>
+          </div>
+        </div>
         </div>
       </nav>
       {/* </div> */}

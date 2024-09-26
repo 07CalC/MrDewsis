@@ -10,7 +10,7 @@ export const MainBanner = () => {
             </div>
             <div className="mx-12 text-black text-center items-center flex flex-col justify-center">
                 <p className="text-[#2ea86c] text-3xl font-serif">Welcome to</p>
-                <strong className="text-[#208856] text-6xl font-serif">MR Dewsis</strong>
+                <strong className="text-[#208856]  text-6xl font-serif">MR Dewsis</strong>
                 <p className="text-[#2ea86c] text-4xl font-serif">Where Taste matters</p>
                 <p className="text-[#208856] text-4xl font-serif">And your<strong> Bank Balance</strong> too</p>
                 
