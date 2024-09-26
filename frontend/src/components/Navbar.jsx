@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <>
     {/* <div className="flex bg-slate-300 bg-opacity-40 justify-center items-center"> */}
-      <nav class="bg-white border-b-2 border-black w-full rounded-b-3xl">
+      <nav class="bg-white border-b-2 border-black w-lvw rounded-b-3xl">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
           
             <img
@@ -49,6 +49,22 @@ export const Navbar = () => {
                   className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
                 >
                   Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#/login"
+                  className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
+                >
+                  Login
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#/adminlogin"
+                  className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
+                >
+                  Admin Login
                 </a>
               </li>
             </ul>

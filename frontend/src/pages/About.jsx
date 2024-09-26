@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <div className="w-full md:mt-0 md:p-10 py-10 flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center bg-white py-10">
+      <div className="flex flex-col rounded-2xl items-center justify-center bg-white py-10">
         <div className="rounded-2xl p-8 md:flex grid justify-center items-center bg-white h-2/6 w-full">
           <div className="flex items-center justify-center md:w-1/3 w-full rounded-xl">
             <img
