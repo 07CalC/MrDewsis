@@ -11,6 +11,7 @@ import { Login } from "./pages/UserLogin";
 import { SignUp } from "./pages/UserSignUp";
 import { AdminLogin } from "./pages/AdminLogin";
 import { Footer } from "./components/Footer";
+import { Contact } from "./pages/ContactUs";
 
 function App() {
   return (
@@ -27,11 +28,13 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/adminlogin" element={<AdminLogin />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
       </HashRouter>
-      <div className="bg-[#0d3f27] h-80 w-full rounded-t-2xl">
+        
         <Footer />
-      </div>
+        
+      
       </div>
       
     

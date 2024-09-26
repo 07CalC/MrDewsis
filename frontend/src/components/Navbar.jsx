@@ -45,7 +45,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#/contact"
                   className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
                 >
                   Contact Us
