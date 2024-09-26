@@ -1,5 +1,6 @@
 import { TiThMenu } from "react-icons/ti";
 import { FaSearch } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ export const Navbar = () => {
             />
             
           <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-search"
           >
             
@@ -23,7 +24,7 @@ export const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
+                  className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
                   aria-current="page"
                 >
                   Home
@@ -37,18 +38,15 @@ export const Navbar = () => {
                   Menu
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
-                >
-                  Subscription
-                </a>
+              <li  className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]">
+              <a href="#/about">
+                About Us
+              </a>
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
+                  className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
                 >
                   Contact Us
                 </a>

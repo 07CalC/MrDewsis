@@ -5,6 +5,8 @@ import { Navbar } from "./components/Navbar";
 import { HeroPage } from "./pages/Hero";
 import { AboutUs } from "./components/AboutUs";
 import { About } from "./pages/About";
+import { Subscription } from "./pages/Subscription";
+import { Login } from "./pages/Login";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HeroPage />}/>
             <Route path="/about" element={<About />}/>
+            <Route path="/pro" element={<Subscription />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
       </HashRouter>
       </div>
