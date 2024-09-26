@@ -6,7 +6,7 @@ export const Contact = () => {
   return (
     <div className="w-full md:mt-0 md:p-10 py-10 flex flex-col items-center justify-center">
       <div className="rounded-2xl p-4 md:flex grid justify-center items-center bg-white h-2/6 w-full">
-        <div className="flex flex-col text-center border-r-2 p-5 border-black mx-10 items-center">
+        <div className="flex flex-col text-center md:border-r-2 p-5 border-black mx-10 items-center">
           <FaPhoneAlt className="text-[2rem] w-[3rem] text-white h-[3rem] bg-[#208856] rounded-full p-2" />
           <strong className="text-2xl font-sans mt-3">Contact Us</strong>
           <p className="text-xl mt-3">+91 9984 555 888</p>
@@ -21,7 +21,7 @@ export const Contact = () => {
           <p className="text-xl">Opposite High Court Hanuman Mandir,</p>
           <p className="text-xl">Prayagraj 211001 </p>
         </div>
-        <div className="flex flex-col text-center p-5 border-l-2 border-black mx-10 items-center">
+        <div className="flex flex-col text-center p-5 md:border-l-2 border-black mx-10 items-center">
           <MdOutlinePhoneInTalk className="text-[2rem] w-[3rem] text-white h-[3rem] bg-[#208856] rounded-full p-2" />
           <strong className="text-2xl mt-3 font-sans">Our Presence</strong>
           <p className="text-xl mt-3">Allahabad High Court, </p>
