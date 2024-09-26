@@ -1,4 +1,4 @@
-import { FaFlag, FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { FaMap } from "react-icons/fa";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 
@@ -33,7 +33,7 @@ export const Contact = () => {
       </div>
       <div className="rounded-2xl p-8 md:flex md:justify-between grid mt-12 justify-center items-center bg-white h-2/6 w-full">
         <div>
-          <img src="https://www.mrdewsis.com/assets/images/section/about.jpg" />
+          <img alt="img" src="https://www.mrdewsis.com/assets/images/section/about.jpg" />
         </div>
         <div></div>
         <div className=" justify-center items-center flex flex-col">

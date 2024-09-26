@@ -1,13 +1,14 @@
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import { Context } from "../assets/context";
 
 
 
 
 export const AdminLogin = () => {
-    
+    const context = useContext(Context)
     const [showPassword, setShowPassword] = useState(false);
     return(
         <div className="md:p-8 py-8 px-0 flex items-center justify-center">
@@ -73,10 +74,12 @@ export const AdminLogin = () => {
             <div>
               <button
                 type="none"
-                
+                onClick={() => context.setIsLoggedIn(true)}
                 className="flex w-full justify-center rounded-md bg-accent hover:bg-accent/75 text-white hover:bg-[#27a567] px-3 py-1.5 text-sm font-semibold leading-6 bg-[#208856]"
               >
+                <a href="#">
                 Sign In
+                </a>
               </button>
             </div>
            

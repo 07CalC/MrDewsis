@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { HeroPage } from "./pages/Hero";
-import { AboutUs } from "./components/AboutUs";
+
 import { About } from "./pages/About";
 import { Subscription } from "./pages/Subscription";
 
@@ -12,10 +12,12 @@ import { SignUp } from "./pages/UserSignUp";
 import { AdminLogin } from "./pages/AdminLogin";
 import { Footer } from "./components/Footer";
 import { Contact } from "./pages/ContactUs";
+import { ContextProvider } from "./assets/context";
 
 function App() {
   return (
     <div className="bg-[#208856]">
+      <ContextProvider>
       <div className="fixed flex w-full bg-opacity-40">
       <Navbar />
       </div>
@@ -34,7 +36,7 @@ function App() {
         
         <Footer />
         
-      
+        </ContextProvider>
       </div>
       
     

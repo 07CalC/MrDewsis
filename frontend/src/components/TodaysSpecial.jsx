@@ -14,6 +14,7 @@ export const TodaysSpecial = () => {
           <img
             src="https://static.vecteezy.com/system/resources/previews/036/627/223/non_2x/ai-generated-savory-dal-makhani-delight-on-transparent-background-png.png"
             className="w-full"
+            alt="img"
           />
         </div>
         <div className="flex flex-col w-full md:w-2/5 p-8 bg-[#cbf5dd]/50 rounded-2xl">
@@ -46,6 +47,7 @@ export const TodaysSpecial = () => {
       <div className="w-full grid md:flex justify-center items-center">
       <div className="md:w-2/5 w-full md:hidden">
           <img
+            alt="img"
             src="https://static.vecteezy.com/system/resources/previews/029/107/695/non_2x/chocolate-milkshake-with-toppings-on-a-transparent-background-ai-generative-free-png.png"
             className="w-full h-1/3 md:hidden"
           />
@@ -77,6 +79,7 @@ export const TodaysSpecial = () => {
         </div>
         <div className="md:w-2/5 w-full">
           <img
+          alt="img"
             src="https://static.vecteezy.com/system/resources/previews/029/107/695/non_2x/chocolate-milkshake-with-toppings-on-a-transparent-background-ai-generative-free-png.png"
             className="w-full h-1/3 hidden md:flex"
           />

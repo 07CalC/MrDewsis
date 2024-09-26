@@ -7,6 +7,7 @@ export const Footer = () => {
       <div className="md:flex md:p-5 items-center  w-full ">
         <div className="md:w-4/5  md:mx-10 h-full flex justify-center items-center">
           <img
+          alt="img"
             src="https://res.cloudinary.com/dkhymc3li/image/upload/v1727367441/images-removebg-preview_1_hizbr2.png"
             className="w-full "
           />

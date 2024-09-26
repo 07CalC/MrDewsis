@@ -1,10 +1,13 @@
 import { TiThMenu } from "react-icons/ti";
 import { FaSearch } from "react-icons/fa";
-import { Link, NavLink, useResolvedPath } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { Context } from "../assets/context";
+import { FaShoppingCart } from "react-icons/fa";
 
 export const Navbar = () => {
-  const [showNav, setShowNav] = useState(true)
+  
+  const context = useContext(Context)
+  const [showNav, setShowNav] = useState(false)
   return (
     <>
     {/* <div className="flex bg-slate-300 bg-opacity-40 justify-center items-center"> */}
@@ -53,7 +56,7 @@ export const Navbar = () => {
                   Contact Us
                 </a>
               </li>
-              <li>
+              {!context.isLoggedIn && <> <li>
                 <a
                   href="#/login"
                   className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
@@ -68,11 +71,21 @@ export const Navbar = () => {
                 >
                   Admin Login
                 </a>
+              </li> </>}
+              {context.isLoggedIn && <>
+                <li>
+                <a
+                  href="#/adminlogin"
+                  className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
+                >
+                  <FaShoppingCart className="text-2xl"/>
+                </a>
               </li>
+              </>}
             </ul>
           </div>
           <div className="md:hidden flex items-center mr-4 self-center">
-            <FaSearch className="text-3xl mx-2"/>
+            {context.isLoggedIn && <FaShoppingCart className="text-3xl mr-4"/>}
             <TiThMenu className="text-3xl" onClick={()=>setShowNav(!showNav)}/>
           </div>
           <div className={`${showNav ? "" : "hidden"} w-svw h-full  cursor-pointer bg-white bg-opacity-60 justify-end items-end lg:hidden`}>

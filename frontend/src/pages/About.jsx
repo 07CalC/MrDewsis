@@ -7,6 +7,7 @@ export const About = () => {
             <img
               src="https://www.mrdewsis.com/assets/images/section/about.jpg"
               className="w-full rounded-lg"
+              alt="img"
             />
           </div>
           <div className="md:w-3/5 text-black text-center items-center flex flex-col justify-center">
