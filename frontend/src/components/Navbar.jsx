@@ -37,7 +37,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#/menu"
                   class="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
                 >
                   Menu
@@ -75,7 +75,7 @@ export const Navbar = () => {
               {context.isLoggedIn && <>
                 <li>
                 <a
-                  href="#/adminlogin"
+                  href="#/cart"
                   className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
                 >
                   <FaShoppingCart className="text-2xl"/>
@@ -91,7 +91,7 @@ export const Navbar = () => {
           <div className={`${showNav ? "" : "hidden"} w-svw h-full  cursor-pointer bg-white bg-opacity-60 justify-end items-end lg:hidden`}>
           <div className="flex flex-col p-5 justify-center items-center">
           <p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#" className="mx-5 ">Home</a></p>
-            <p  className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#" className="mx-5">Menu</a></p>
+            <p  className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/menu" className="mx-5">Menu</a></p>
             <p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/about" className="mx-5">About Us</a></p>
             <p className="font-bold text-2xl border-b border-[#208856] text-center text-black"><a onClick={()=>setShowNav(!showNav)} href="#/contact" className="mx-5">Contact Us</a></p>
             {!context.isLoggedIn && <><p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/login" className="mx-5">Login</a></p>
