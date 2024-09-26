@@ -32,7 +32,7 @@ export const SignUp = () => {
                   id="firstName"
                   name="firstName"
                   type="text"
-                  required
+                  
                   
                   autoComplete=""
                   className="block bg-primary text-center w-full rounded-md border-0 py-1.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:text-2xl focus:ring-2 focus:ring-inset  text-2xl sm:leading-6"
@@ -55,7 +55,7 @@ export const SignUp = () => {
                   id="Number"
                   name="Number"
                   type="Number"
-                  required
+                  
                   
                   autoComplete="none"
                   className="block bg-primary text-center w-full rounded-md border-0 py-1.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:text-2xl focus:ring-2 focus:ring-inset  text-2xl sm:leading-6"
@@ -76,7 +76,7 @@ export const SignUp = () => {
                   id="email"
                   name="email"
                   type="email"
-                  required
+                  
                   
                   autoComplete="email"
                   className="block bg-primary text-center w-full rounded-md border-0 py-1.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:text-2xl focus:ring-2 focus:ring-inset  text-2xl sm:leading-6"
