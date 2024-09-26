@@ -3,7 +3,7 @@ export const Subscription = () => {
     <div className="w-full md:mt-0 md:p-10 py-10 flex flex-col  items-center justify-center">
       <div className="flex flex-col items-center justify-center p-10 rounded-2xl bg-white py-10">
         <strong className="text-5xl text-[#208856] font-serif">Dewsis Pro Membership</strong>
-        <div className="grid mt-6 justify-center items-center rounded-xl grid-cols-2 p-8">
+        <div className="grid mt-6 justify-center items-center rounded-xl grid-cols-1 md:grid-cols-2 p-8">
             <div className="w-4/5 p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
                 <strong>Exclusive Discounts</strong>
                 <p>Enjoy exclusive discounts on your favorite cafe items and special offers.</p>
