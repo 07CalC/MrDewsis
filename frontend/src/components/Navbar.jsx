@@ -73,6 +73,12 @@ export const Navbar = () => {
                 </a>
               </li> </>}
               {context.isLoggedIn && <>
+              <li>
+                <a
+                href="#/feedback"
+                className="block py-2 px-1 text-xl text-black font-bold hover:text-[#208856]"
+                >Feedback</a>
+              </li>
                 <li>
                 <a
                   href="#/cart"
@@ -81,6 +87,7 @@ export const Navbar = () => {
                   <FaShoppingCart className="text-2xl"/>
                 </a>
               </li>
+              
               </>}
             </ul>
           </div>

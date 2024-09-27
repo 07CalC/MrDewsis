@@ -15,6 +15,7 @@ import { Contact } from "./pages/ContactUs";
 import { ContextProvider } from "./assets/context";
 import { Menu } from "./pages/Menu";
 import { Cart } from "./pages/Cart";
+import { Feedback } from "./pages/Feedback";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/feedback" element={<Feedback />} />
           </Routes>
       </HashRouter>
         
