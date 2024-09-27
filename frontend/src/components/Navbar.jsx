@@ -101,6 +101,7 @@ export const Navbar = () => {
             <p  className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/menu" className="mx-5">Menu</a></p>
             <p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/about" className="mx-5">About Us</a></p>
             <p className="font-bold text-2xl border-b border-[#208856] text-center text-black"><a onClick={()=>setShowNav(!showNav)} href="#/contact" className="mx-5">Contact Us</a></p>
+            <p className="font-bold text-2xl border-b border-[#208856] text-center text-black"><a onClick={()=>setShowNav(!showNav)} href="#/feedback" className="mx-5">Feedback</a></p>
             {!context.isLoggedIn && <><p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/login" className="mx-5">Login</a></p>
             <p className="font-bold text-2xl border-b border-[#208856]  text-black"><a onClick={()=>setShowNav(!showNav)} href="#/adminlogin" className="mx-5">Admin Login</a></p> </>}
           </div>
