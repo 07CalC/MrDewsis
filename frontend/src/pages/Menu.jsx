@@ -49,23 +49,23 @@ export const Menu = () => {
     }
   return (
     <div className="w-full md:mt-0 md:p-10 py-10 flex flex-col  items-center justify-center">
-      <div className="flex flex-col items-center rounded-2xl justify-center p-10 bg-white py-10">
-        <div className="flex 5/6">
-          <select onChange={(e) => {setCuisine(e.target.value)}} className="bg-[#208856] mx-4 md:mx-10 w-auto border-gray-300 text-white p-3 rounded-full">
+      <div className="flex flex-col w-full items-center rounded-2xl justify-center md:p-10 bg-white py-10">
+        <div className="flex md:5/6">
+          <select onChange={(e) => {setCuisine(e.target.value)}} className="bg-[#208856] mx-2 md:mx-10 w-auto border-gray-300 text-white p-3 rounded-full">
             <option value="">All</option>
             {UniqueCuisine.map((cuisine) => (
               <option value={cuisine}>{cuisine}</option>
             ))}
           </select>
 
-          <select onChange={(e) => setType(e.target.value)} className="bg-[#208856] mx-4 md:mx-10 w-auto border-gray-300 text-white p-3 rounded-full">
+          <select onChange={(e) => setType(e.target.value)} className="bg-[#208856] mx-2 md:mx-10 w-auto border-gray-300 text-white p-3 rounded-full">
             <option value="">All</option>
             {uniquiType.map((type) => (
               <option value={type}>{type}</option>
             ))}
           </select>
 
-          <select onChange={(e) => setTime(e.target.value)} className="bg-[#208856] mx-4 md:mx-10 w-auto border-gray-300 text-white p-3 rounded-full">
+          <select onChange={(e) => setTime(e.target.value)} className="bg-[#208856] mx-2 md:mx-10 w-auto border-gray-300 text-white p-3 rounded-full">
             <option value="">All</option>
             {uniqueTime.map((time) => (
               <option value={time}>{time}</option>
@@ -74,9 +74,9 @@ export const Menu = () => {
         </div>
         <div className="mt-10 flex flex-col items-center justify-center md:grid md:grid-cols-3 ">
           {data.map((item) => (
-            <div className="md:w-5/6 w-11/12 text-center flex flex-col justify-center items-center p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
+            <div className="md:w-5/6 w-full text-center flex flex-col justify-center items-center p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
               <img src={item.img} />
-              <strong className="text-lg">{item.name}</strong>
+              <strong className="text-xl">{item.name}</strong>
               <p>
                 <strong>Ingredients:</strong> {item.ingredients}
               </p>
@@ -86,14 +86,14 @@ export const Menu = () => {
               <p>
                 <strong className="text-red-500">Note:</strong> {item.contains}
               </p>
-              <p>
-                <strong>{item.cuisine}</strong>
+              <p className="text-lg text-slate-600">
+                {item.cuisine}
               </p>
-              <p>
-                <strong>{item.type}</strong>
+              <p className="text-lg text-slate-600">
+                {item.type}
               </p>
-              <p>
-                <strong>{item.time}</strong>
+              <p className="text-lg text-slate-600">
+                {item.time}
               </p>
               <p>
                 <strong className="text-xl">{item.price}</strong>

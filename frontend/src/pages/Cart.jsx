@@ -1,80 +1,117 @@
 export const Cart = () => {
   return (
-    <div className="w-full md:mt-0 md:p-10 py-10 flex flex-col  items-center justify-center">
-      <div className="grid md:flex">
-        <div className="flex flex-col items-center rounded-2xl justify-center p-10 bg-white py-10">
-          <div className="mt-10 flex flex-col items-center justify-center md:grid md:grid-cols-3">
-            <div className="md:w-5/6 w-11/12 text-center flex flex-col justify-center items-center p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
-              <img src="https://static.vecteezy.com/system/resources/previews/036/627/223/non_2x/ai-generated-savory-dal-makhani-delight-on-transparent-background-png.png" />
-              <strong className="text-lg">Dal makhani</strong>
-
-              <p>
-                <strong>Calories: 300</strong>
-              </p>
-
-              <p>
-                <strong className="text-xl">350</strong>
-              </p>
-              <p>
-                <strong className="text-xl">qty: 1</strong>
-              </p>
-            </div>
-            <div className="md:w-5/6 w-11/12 text-center flex flex-col justify-center items-center p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
-              <img src="https://static.vecteezy.com/system/resources/previews/029/107/695/non_2x/chocolate-milkshake-with-toppings-on-a-transparent-background-ai-generative-free-png.png" />
-              <strong className="text-lg">chocolate smoothie</strong>
-
-              <p>
-                <strong>Calories: 307</strong>
-              </p>
-
-              <p>
-                <strong className="text-xl">200</strong>
-              </p>
-              <p>
-                <strong className="text-xl">qty: 2</strong>
-              </p>
-            </div>
-            <div className="md:w-5/6 w-11/12 text-center flex flex-col justify-center items-center p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
-              <img src="https://theeburgerdude.com/wp-content/uploads/2024/02/Alfredo-2-scaled.jpg" />
-              <strong className="text-lg">Pasta Alfredo</strong>
-
-              <p>
-                <strong>Calories: 450</strong>
-              </p>
-
-              <p>
-                <strong className="text-xl">400</strong>
-              </p>
-              <p>
-                <strong className="text-xl">qty: 1</strong>
-              </p>
-            </div>
-            <div className="md:w-5/6 w-11/12 text-center flex flex-col justify-center items-center p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
-              <img src="https://static.toiimg.com/thumb/54734028.cms?imgsize=73275&width=800&height=800" />
-              <strong className="text-lg">Grilled Chicken Sandwich</strong>
-
-              <p>
-                <strong>Calories: 400</strong>
-              </p>
-
-              <p>
-                <strong className="text-xl">350</strong>
-              </p>
-              <p>
-                <strong className="text-xl">qty: 1</strong>
-              </p>
-            </div>
+    <div className="md:flex p-4 w-full">
+      <div className="md:w-3/4 rounded-2xl p-8  grid justify-center items-center bg-white">
+        <strong className="text-4xl font-serif">Shopping Cart</strong>
+        <div className="md:w-5/6 mt-5 w-11/12 text-center md:flex md:justify-start items-start p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
+          <img src="https://static.toiimg.com/thumb/54734028.cms?imgsize=73275&width=800&height=800" className="md:w-1/4" />
+          <div className="flex ml-4 md:text-start flex-col">
+          <div className="md:flex justify-between">
+            <div>
+          <strong className="text-2xl">Grilled Chicken Sandwhich</strong>
+          </div>
+          <div>
+          <select className="p-1 md:ml-8 rounded-2xl bg-[#208856] text-white text-lg">
+            <option >Qty</option>
+            <option selected>1</option>
+            <option >2</option>
+            <option >3</option>
+            <option >4</option>
+          </select>
+          </div>
+          </div>
+          <p className="text-xl text-slate-800">Calories: 400 calories per Sandwhich</p>
+          <p className="text-lg text-slate-600">American</p>
+          <p className="text-lg text-slate-600">Main Course</p>
+          <p className="text-lg text-slate-600">Lunch</p>
+          <p className="text-2xl font-bold text-red-900">Price: 350</p>
           </div>
         </div>
-        <div className="w-full flex flex-col justify-center items-center h-auto rounded-2xl p-4 bg-white mt-6 md:mt-0 md:ml-4">
-          <strong className="text-2xl"> order summary</strong>
-          <p className="text-xl">total price: 1500</p>
-          <p className="text-xl">total calories: 1457</p>
-          <button className="bg-[#208856] mx-4 p-4 text-white hover:bg-[#27a567] rounded-2xl">
-              proceed 
-            </button>
+        <div className="md:w-5/6 mt-5 w-11/12 text-center md:flex md:justify-start items-start p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
+          <img src="https://static.toiimg.com/thumb/54734028.cms?imgsize=73275&width=800&height=800" className="md:w-1/4" />
+          <div className="flex ml-4 md:text-start flex-col">
+          <div className="md:flex justify-between">
+            <div>
+          <strong className="text-2xl">Grilled Chicken Sandwhich</strong>
+          </div>
+          <div>
+          <select className="p-1 md:ml-8 rounded-2xl bg-[#208856] text-white text-lg">
+            <option >Qty</option>
+            <option selected>1</option>
+            <option >2</option>
+            <option >3</option>
+            <option >4</option>
+          </select>
+          </div>
+          </div>
+          <p className="text-xl text-slate-800">Calories: 400 calories per Sandwhich</p>
+          <p className="text-lg text-slate-600">American</p>
+          <p className="text-lg text-slate-600">Main Course</p>
+          <p className="text-lg text-slate-600">Lunch</p>
+          <p className="text-2xl font-bold text-red-900">Price: 350</p>
+          </div>
+        </div>
+        <div className="md:w-5/6 mt-5 w-11/12 text-center md:flex md:justify-start items-start p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
+          <img src="https://static.toiimg.com/thumb/54734028.cms?imgsize=73275&width=800&height=800" className="md:w-1/4" />
+          <div className="flex ml-4 md:text-start flex-col">
+          <div className="md:flex justify-between">
+            <div>
+          <strong className="text-2xl">Grilled Chicken Sandwhich</strong>
+          </div>
+          <div>
+          <select className="p-1 md:ml-8 rounded-2xl bg-[#208856] text-white text-lg">
+            <option >Qty</option>
+            <option selected>1</option>
+            <option >2</option>
+            <option >3</option>
+            <option >4</option>
+          </select>
+          </div>
+          </div>
+          <p className="text-xl text-slate-800">Calories: 400 calories per Sandwhich</p>
+          <p className="text-lg text-slate-600">American</p>
+          <p className="text-lg text-slate-600">Main Course</p>
+          <p className="text-lg text-slate-600">Lunch</p>
+          <p className="text-2xl font-bold text-red-900">Price: 350</p>
+          </div>
+        </div>
+        <div className="md:w-5/6 mt-5 w-11/12 text-center md:flex md:justify-start items-start p-6 rounded-xl my-4 bg-[#cbf5dd]/50">
+          <img src="https://static.toiimg.com/thumb/54734028.cms?imgsize=73275&width=800&height=800" className="md:w-1/4" />
+          <div className="flex ml-4 md:text-start flex-col">
+          <div className="md:flex justify-between">
+            <div>
+          <strong className="text-2xl">Grilled Chicken Sandwhich</strong>
+          </div>
+          <div>
+          <select className="p-1 md:ml-8 rounded-2xl bg-[#208856] text-white text-lg">
+            <option >Qty</option>
+            <option selected>1</option>
+            <option >2</option>
+            <option >3</option>
+            <option >4</option>
+          </select>
+          </div>
+          </div>
+          <p className="text-xl text-slate-800">Calories: 400 calories per Sandwhich</p>
+          <p className="text-lg text-slate-600">American</p>
+          <p className="text-lg text-slate-600">Main Course</p>
+          <p className="text-lg text-slate-600">Lunch</p>
+          <p className="text-2xl font-bold text-red-900">Price: 350</p>
+          </div>
         </div>
       </div>
+      <div className="flex mt-4 md:mt-0 md:ml-4 md:w-1/4  flex-col">
+      <div className=" w-full rounded-2xl p-8 grid items-center justify-center bg-white">
+      <strong className="text-2xl font-serif">Order Summary</strong>
+      <p className="text-xl mt-5 font-bold">Total Price: 1400</p>
+      <p className="text-xl  font-semibold">Total Calorie: 1600</p>
+      <p className="text-lg mt-2 text-green-900">Eligible for free delivery</p>
+      <button className="p-3 mt-5 w-11/12 hover:bg-[#27a567] text-white bg-[#208856] rounded-full text-xl">Proceed to Pay</button>
+
+      </div>
+      
+      </div>
+
     </div>
   );
 };

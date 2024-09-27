@@ -85,7 +85,7 @@ export const Navbar = () => {
             </ul>
           </div>
           <div className="md:hidden flex items-center mr-4 self-center">
-            {context.isLoggedIn && <FaShoppingCart className="text-3xl mr-4"/>}
+            {context.isLoggedIn && <a href="#/cart"><FaShoppingCart className="text-3xl mr-4"/></a>}
             <TiThMenu className="text-3xl" onClick={()=>setShowNav(!showNav)}/>
           </div>
           <div className={`${showNav ? "" : "hidden"} w-svw h-full  cursor-pointer bg-white bg-opacity-60 justify-end items-end lg:hidden`}>
