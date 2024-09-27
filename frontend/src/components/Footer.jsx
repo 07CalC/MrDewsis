@@ -42,7 +42,7 @@ export const Footer = () => {
       <div className="md:flex mt-5 text-center justify-between">
         <strong className="text-white w-1/3 text-center mx-10">
           2011 © Copyright Dewsis India Services Pvt. Ltd. All Rights Reserved.
-          Powered by Genetic Web Technologies Pvt. Ltd
+          
         </strong>
         <div className="mx-10 items-center justify-center mt-2 md:mt-0 flex">
           <a
